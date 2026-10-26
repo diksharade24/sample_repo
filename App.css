@@ -1,73 +1,141 @@
-/* App.css */
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #263528;
+  background: #f7faf5;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Landing Page Background Image */
 .landing-page {
   min-height: 100vh;
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
-    ),
-    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1920&q=80");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 20px;
   text-align: center;
   color: white;
+
+  background-image:
+    linear-gradient(
+      rgba(10, 35, 16, 0.58),
+      rgba(10, 35, 16, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1920&q=85");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .landing-content {
-  max-width: 800px;
-  padding: 40px 20px;
+  max-width: 850px;
+  padding: 35px;
 }
 
 .landing-content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin: 0 0 22px;
 }
 
 .landing-content p {
   font-size: 1.2rem;
-  line-height: 1.7;
-  margin-bottom: 30px;
+  line-height: 1.8;
+  margin: 0 auto 30px;
 }
 
-.get-started-btn {
-  background-color: #2e7d32;
-  color: white;
-  padding: 14px 30px;
+.primary-btn {
+  display: inline-block;
   border: none;
   border-radius: 8px;
+  background: #287a3d;
+  color: white;
+  padding: 14px 28px;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.2s ease;
 }
 
-.get-started-btn:hover {
-  background-color: #1b5e20;
+.primary-btn:hover {
+  background: #1d5d2e;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .landing-content h1 {
-    font-size: 2.3rem;
+.primary-btn:disabled {
+  background: #8ca590;
+  cursor: not-allowed;
+}
+
+/* About Us Page */
+.about-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+.about-hero {
+  padding: 55px 20px;
+  text-align: center;
+  background: #e2efdf;
+  border-radius: 14px;
+}
+
+.about-hero h1 {
+  margin-top: 0;
+  color: #245b32;
+}
+
+.about-section {
+  padding: 30px 0;
+  line-height: 1.8;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  line-height: 1.7;
+}
+
+.about-card h2 {
+  color: #287a3d;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-content {
+    padding: 20px;
   }
 
   .landing-content p {
     font-size: 1rem;
-  }
-
-  .landing-page {
-    background-attachment: scroll;
   }
 }
