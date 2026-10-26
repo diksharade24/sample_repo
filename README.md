@@ -1,86 +1,81 @@
-# 
-# Project Name
+# e-plantShopping
 
-## Project Details
+## Paradise Nursery — Online Plant Shopping Application
 
-**Project Name:** [Enter Your Project Name]
+### Project Description
+e-plantShopping is a React-based online plant shopping application called Paradise Nursery. It allows users to explore houseplants across multiple categories, add plants to a shopping cart, adjust quantities, remove items, and view their order total.
 
-**Domain:** [AI/ML, Blockchain, Web Development, etc.]
+### Features
+- Landing page with a background image and Get Started button.
+- Company information page.
+- Three plant categories with six unique plants in each category.
+- Product images, names, and prices.
+- Add to Cart functionality using Redux Toolkit.
+- Disabled Add to Cart buttons for products already added.
+- Shared navigation links for Home, Plants, and Cart.
+- Dynamic shopping cart item count.
+- Quantity increment and decrement controls.
+- Delete functionality for cart items.
+- Automatic subtotal and total price calculations.
+- Checkout message and Continue Shopping navigation.
 
-**Developed By:** [Your Name]
+### Technologies Used
+- React.js
+- JavaScript
+- CSS
+- Redux Toolkit
+- React Redux
+- React Router DOM
+- Vite
 
-**Department:** [Your Department]
-
-**Institution:** [Your College Name]
-
-## About the Project
-
-[Write a short description of your project, including the problem it solves, its main purpose, and how it works.]
-
-## Objectives
-
-- To solve the identified problem using technology.
-- To develop a user-friendly and efficient solution.
-- To implement the project's core features.
-- To provide a practical and scalable approach.
-
-## Key Features
-
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
-- [Feature 4]
-
-## Technology Stack
-
-- **Frontend:** [HTML, CSS, JavaScript, React, etc.]
-- **Backend:** [Node.js, Python, etc.]
-- **Database:** [MongoDB, MySQL, etc.]
-- **Tools:** [Git, GitHub, VS Code, etc.]
-
-## Installation and Setup
+### Installation and Setup
 
 1. Clone the repository:
+
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/diksharade24/e-plantShopping.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
-   cd <project-folder>
+   cd e-plantShopping
    ```
 
-3. Install the required dependencies:
+3. Install dependencies:
+
    ```bash
    npm install
    ```
 
-4. Start the project:
+4. Start the development server:
+
    ```bash
    npm run dev
    ```
 
-*Note: Update the commands according to your project's actual technology stack.*
+5. Open the local URL displayed in the terminal.
 
-## Project Structure
+### Project Structure
 
 ```text
-project-name/
+e-plantShopping/
 ├── README.md
-├── src/
-├── public/
 ├── package.json
-└── .gitignore
+└── src/
+    ├── App.jsx
+    ├── App.css
+    ├── AboutUs.jsx
+    ├── CartSlice.jsx
+    ├── ProductList.jsx
+    ├── CartItem.jsx
+    ├── Navbar.jsx
+    ├── store.js
+    └── main.jsx
 ```
 
-*The structure above is an example. Update it to match your repository.*
+### Purpose
+This project demonstrates the development of an interactive e-commerce application using React and Redux Toolkit.
 
-## Future Scope
-
-- Add new features and improvements.
-- Enhance performance and scalability.
-- Improve user experience and security.
-
-## License
-
-This project is developed for educational and academic purposes.
+### License
+Created for educational and academic purposes.
